@@ -43,6 +43,7 @@ class GameController {
 
 
     private fun getRoundCounts(): Int {
+
         return runCatching {
             val roundCounts = inputView.readRoundCounts()
             validationUtil.validateRoundCounts(roundCounts)
